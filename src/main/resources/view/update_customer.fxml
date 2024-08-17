@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="486.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.shehan_toga_kade.controller.UpdateCustomer">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label layoutX="137.0" layoutY="13.0" prefHeight="53.0" prefWidth="361.0" text="UPDATE CUSTOMER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelId" layoutX="180.0" layoutY="98.0" prefHeight="39.0" prefWidth="240.0" text="ID : 0001">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboTitle" layoutX="180.0" layoutY="151.0" prefHeight="25.0" prefWidth="256.0" promptText="Title" />
+      <JFXTextField fx:id="txtName" layoutX="180.0" layoutY="199.0" prefHeight="26.0" prefWidth="256.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="180.0" layoutY="249.0" prefHeight="26.0" prefWidth="256.0" promptText="Address" />
+      <JFXTextField fx:id="txtContact" layoutX="180.0" layoutY="308.0" onAction="#updateCustomer" prefHeight="26.0" prefWidth="256.0" promptText="Contact Number" />
+      <DatePicker fx:id="dateBirthdate" layoutX="174.0" layoutY="365.0" prefHeight="26.0" prefWidth="262.0" promptText="Birth Date" />
+      <JFXButton layoutX="188.0" layoutY="417.0" onAction="#addCustomer" prefHeight="31.0" prefWidth="240.0" style="-fx-background-color: #1e90ff;" text="Update Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
